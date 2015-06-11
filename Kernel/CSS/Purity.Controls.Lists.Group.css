@@ -1,0 +1,154 @@
+ul[data-type-element="Controls.Lists.Group.Container"]{
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+    LI[data-type-element="Controls.Lists.Group.Space"]{
+        position            : relative;
+        display             : block;
+        width               : 100%;
+        height              : 0em;
+        -moz-transition     : height ease-in-out 150ms;
+        -o-transition       : height ease-in-out 150ms;
+        -webkit-transition  : height ease-in-out 150ms;
+        transition          : height ease-in-out 150ms;
+        list-style-type     : none;
+        margin              : 0;
+        padding             : 0;
+    }
+    LI[data-type-element="Controls.Lists.Group.Item"]{
+        position        :relative;
+        display         :block;
+        width           :100%;
+        cursor          :default;
+        overflow        :hidden;
+        list-style-type : none;
+        margin          :0;
+        padding         :0;
+    }
+        div[data-type-element="Controls.Lists.Group.Item.Cover"]{
+            position    : absolute;
+            top         : 0;
+            left        : 0;
+            width       : 100%;
+            height      : 100%;
+        }
+            div[data-type-element="Controls.Lists.Group.Item.Cover.Group"]{
+                position    : absolute;
+                top         : 0;
+                left        : 0;
+                width       : 50%;
+                height      : 100%;
+                background  :rgba(255,255,255,0.01);
+            }
+            div[data-type-element="Controls.Lists.Group.Item.Cover.Replace"]{
+                position    : absolute;
+                top         : 0;
+                left        : 50%;
+                width       : 50%;
+                height      : 100%;
+                background  :rgba(255,255,255,0.01);
+            }
+        div[data-type-element="Controls.Lists.Group.Item.Group"]{
+            position    : absolute;
+            top         : 0;
+            left        : 0;
+            width       : 100%;
+            height      : 100%;
+	        animation			: Lists_Group_Item_Group_Show 100ms ease-in-out 0ms 1 ;
+	        -moz-animation		: Lists_Group_Item_Group_Show 100ms ease-in-out 0ms 1 ;
+	        -o-animation		: Lists_Group_Item_Group_Show 100ms ease-in-out 0ms 1 ;
+	        -webkit-animation	: Lists_Group_Item_Group_Show 100ms ease-in-out 0ms 1 ;
+        }
+	        @keyframes Lists_Group_Item_Group_Show {
+		        from { opacity: 0; } to { opacity:1;  }
+	        }
+	        @-moz-keyframes Lists_Group_Item_Group_Show {
+		        from { opacity: 0; } to { opacity:1;  }
+	        }
+	        @-webkit-keyframes Lists_Group_Item_Group_Show {
+		        from { opacity: 0; } to { opacity:1;  }
+	        }
+
+    LI[data-type-element="Controls.Lists.Group.ItemsGroup"]{
+        position        :relative;
+        display         :block;
+        width           :100%;
+        cursor          :default;
+        overflow        :hidden;
+        list-style-type : none;
+        margin          :0;
+        padding         :0;
+    }
+        div[data-type-element="Controls.Lists.Group.ItemsGroup.Title"]{
+            position    : relative;
+            width       : 100%;
+        }
+            div[data-type-element="Controls.Lists.Group.ItemsGroup.Title"] input{
+                position    : relative;
+                width       : 100%;
+                background  : none;
+                border      : none;
+                outline     : none;
+            }
+            div[data-type-element="Controls.Lists.Group.ItemsGroup.Title.Cover"]{
+                position    : absolute;
+                top         : 0;
+                left        : 0;
+                width       : 100%;
+                height      : 100%;
+                background  :rgba(255,255,255,0.01);
+            }
+                div[data-type-element="Controls.Lists.Group.ItemsGroup.Arrow"]{
+                    position    : absolute;
+                    top         : 0;
+                    width       : 1em;
+                    height      : 100%;
+                }
+                    div[data-type-element-layout="Left"]{
+                        left        :0;
+                    }
+                    div[data-type-element-layout="Right"]{
+                        left        :100%;
+                        margin-left : -1em;
+                    }
+                    div[data-type-element="Controls.Lists.Group.ItemsGroup.Arrow.Node"]{
+                        position            : absolute;
+                        top                 : 50%;
+                        margin-top          :-0.4em;
+                        width               : 0;
+                        height              : 0;
+                        border-left         : 0.4em solid transparent;
+                        border-right        : 0.4em solid transparent;
+                        border-top          : 0.8em solid rgba(255,255,255,0.5); 
+                        /*
+                        -moz-transition     : all ease-in-out 350ms;
+                        -o-transition       : all ease-in-out 350ms;
+                        -webkit-transition  : all ease-in-out 350ms;
+                        transition          : all ease-in-out 350ms;
+                            */
+                    }
+                        div[data-type-element-position="Maximized"] {
+                            -moz-transform      : rotate(0deg);
+                            -ms-transform       : rotate(0deg);
+                            -o-transform        : rotate(0deg);
+                            -webkit-transform   : rotate(0deg);
+                            transform           : rotate(0deg);
+                        }
+                        div[data-type-element-position="Minimized"]{
+                            -moz-transform      : rotate(180deg);
+                            -ms-transform       : rotate(180deg);
+                            -o-transform        : rotate(180deg);
+                            -webkit-transform   : rotate(180deg);
+                            transform           : rotate(180deg);
+                        }
+        ul[data-type-element="Controls.Lists.Group.ItemsGroup.List"]{
+            position            : relative;
+            width               : 95%;
+            left                :5%;
+            padding             :0;
+            -moz-transition     : height ease-in-out 150ms;
+            -o-transition       : height ease-in-out 150ms;
+            -webkit-transition  : height ease-in-out 150ms;
+            transition          : height ease-in-out 150ms;
+        }

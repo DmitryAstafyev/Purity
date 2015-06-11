@@ -1,0 +1,340 @@
+html {
+    width : 100%;
+    height: 100%;
+}
+body {
+    width               : 100%;
+    height              : 100%;
+    max-width           : 1px;
+    max-height          : 1px;
+    background-image    : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAMAAADto6y6AAAAD1BMVEUgICAAAQAoKCg1NTU/Pz+suxeKAAAAOklEQVR42u2QwQkAMAgDo3b/mftSlKO4QO+VINGgZPJkarMyXb8TcaJM1/IJBtiYFh3WBDpsx8l/CbgSVgPZd9YSYQAAAABJRU5ErkJggg==);
+    background-repeat   : repeat;
+    overflow            : visible;
+}
+    div[data-type="PVC.Background.Cover"] {
+        position    : absolute;
+        top         : 0px;
+        left        : 0px;
+        width       : 100%;
+        height      : 100%;
+        background  : rgb(255,255,255);
+        opacity     : 0.7;
+    }
+    div[data-type="PVC.Logo.Container"]{
+        position        : absolute;
+        top             : 100%;
+        left            : 50px;
+        margin-top      : -150px;
+        width           : 100px;
+        height          : 100px;
+    }
+
+div[data-type="PVC.Logo.Basis"] {
+    position            : absolute;
+    width               : 100px;
+    height              : 100px;
+    border-radius       : 50px;
+    background          : rgb(56,56,56);
+    background          : -moz-linear-gradient(top, rgba(56,56,56,1) 1%, rgba(214,214,214,1) 100%);
+    background          : -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(56,56,56,1)), color-stop(100%,rgba(214,214,214,1)));
+    background          : -webkit-linear-gradient(top, rgba(56,56,56,1) 1%,rgba(214,214,214,1) 100%);
+    background          : -o-linear-gradient(top, rgba(56,56,56,1) 1%,rgba(214,214,214,1) 100%);
+    background          : -ms-linear-gradient(top, rgba(56,56,56,1) 1%,rgba(214,214,214,1) 100%);
+    background          : linear-gradient(to bottom, rgba(56,56,56,1) 1%,rgba(214,214,214,1) 100%);
+    filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#d6d6d6',GradientType=0 );
+    -webkit-box-shadow  : 3px 3px 15px rgba(0,0,0,0.4), -3px -3px 15px rgba(255,255,255,1);
+    box-shadow          : 3px 3px 15px rgba(0,0,0,0.4), -3px -3px 15px rgba(255,255,255,1);
+}
+    div[data-type="PVC.Logo.Basis"]:after {
+        content             : "";
+        position            : absolute;
+        width               : 90px;
+        height              : 90px;
+        margin-top          : 5px;
+        margin-left         : 5px;
+        border-radius       : 50px;
+        background          : rgb(0,0,0);
+    }
+    div[data-type="PVC.Logo.LightWayRing"]{
+        position            : absolute;
+        width               : 70px;
+        height              : 70px;
+        margin-top          : 10px;
+        margin-left         : 10px;
+        border-radius       : 40px;
+        border              : dotted 5px rgb(0,0,255);
+    }
+div[data-type="PVC.Logo.LightWayRing.Cover"] {
+    position                            : absolute;
+    width                               : 80px;
+    height                              : 80px;
+    margin-top                          : 10px;
+    margin-left                         : 10px;
+    border-radius                       : 40px;
+    background                          : -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    background                          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
+    background                          : -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+    background                          : -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+    background                          : -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+    background                          : linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+    filter                              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    -moz-animation-name                 : PVC_Logo_LightWayRing_Cover;
+    -o-animation-name                   : PVC_Logo_LightWayRing_Cover;
+    -webkit-animation-name              : PVC_Logo_LightWayRing_Cover;
+    animation-name                      : PVC_Logo_LightWayRing_Cover;
+    -moz-animation-iteration-count      : infinite;
+    -o-animation-iteration-count        : infinite;
+    -webkit-animation-iteration-count   : infinite;
+    animation-iteration-count           : infinite;
+    -moz-animation-duration             : 2000ms;
+    -o-animation-duration               : 2000ms;
+    -webkit-animation-duration          : 2000ms;
+    animation-duration                  : 2000ms;
+    -moz-animation-timing-function      : linear;
+    -o-animation-timing-function        : linear;
+    -webkit-animation-timing-function   : linear;
+    animation-timing-function           : linear;
+}
+    div[data-type="PVC.Logo.Button"]{
+        position            : absolute;
+        width               : 60px;
+        height              : 60px;
+        margin-top          : 20px;
+        margin-left         : 20px;
+        border-radius       : 30px;
+        background          : rgb(165,165,165);
+        background          : -moz-radial-gradient(center, ellipse cover,  rgba(165,165,165,1) 1%, rgba(0,0,0,1) 77%);
+        background          : -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,rgba(165,165,165,1)), color-stop(77%,rgba(0,0,0,1)));
+        background          : -webkit-radial-gradient(center, ellipse cover,  rgba(165,165,165,1) 1%,rgba(0,0,0,1) 77%);
+        background          : -o-radial-gradient(center, ellipse cover,  rgba(165,165,165,1) 1%,rgba(0,0,0,1) 77%);
+        background          : -ms-radial-gradient(center, ellipse cover,  rgba(165,165,165,1) 1%,rgba(0,0,0,1) 77%);
+        background          : radial-gradient(ellipse at center,  rgba(165,165,165,1) 1%,rgba(0,0,0,1) 77%);
+        filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a5a5', endColorstr='#000000',GradientType=1 );
+    }
+        div[data-type="PVC.Logo.Button"]:after{
+            content             : "";
+            position            : absolute;
+            width               : 60px;
+            height              : 60px;
+            border-radius       : 30px;
+            background-image    : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAWCAYAAAC2ew6NAAAEZUlEQVR42oWX12ogMQxFhzTSe4f03ntPSCP1JY2E/P+PaDmCA2Z2s3kQnrElX+lalmaqlpaWQGZnZ2NpaSnW19djdXXVMWVzczP6+vpiZGQkSn2E597e3lhbW4udnZ0ct7e3Y2NjI/fo6OiIpqammJmZCfW1X1xcRA+MtNna2krZ29v7C68CBOFlbm6OzTFiBDjHlZWVmJ6eTsCenh71dTLXDWx3dzftlpeXERxKZ9Uv8RYWFgwI3ZKkDKzEq2RmeHg4Dg8PMdRRmGSDdGR/fz8GBgZicnKyZCb1Tk5OGBEYSV3ZPTo6StDm5ubUr+MhpaNiYzc4OCheMppHcHl5ySIARKXDCHPJ1OnpabKADceCzvn5eZydnck8wTEPMI6yzt7smc6Jpx362IqJjY6CNz8/n6xWn5+f8fDwwIK5wqIRMrIZzmbu3N/fx8fHR7y8vMTT0xNzbA6T6BtYinMHBwdxd3cXX19f8fr6Ch5Mso4++yMEmnY6fHx8HDc3N/H9/R0VE0bEkTGW4DIFo7zDBjrlMakHmBcS/TLPsfOiGQTinJfJk2QekiSqYlLaZdJ3jQHnWSM2Yd0biw4jLOGEzpS3H+FZFrVlP94hg5EAJY93SNNRI85xamoqk7i1tTVlaGiIhM6NdKhkUkcmJiaw85KRj+Qz+jqpLuASAh6XNLHa29ujv7/f6iNBKVV5W3Gos7MzGhoaMObCZIno6upiU4+REce9NNxqEj5tGxsbsUnbsbExwGRRlnSeNUpXHY991IHNfK7MBYBHR0dhA2PLSTrQ3d0d4+PjBoTAFnY8AwAYIOhigy17wLTOcawEZ05j9yMevhgYAVVl4re1tVkr6x0IVr10lhSFNZgETP16B8LG/Db3f8VDR2YrjO0kLMJKrYMgRF8vPToOI4hMlvbM/av0MP6Kh09UIi8TjDLBcWpYZ8aS5THaNpkjR9mYsc4MlcQqwqiYoz/iUXvNa2w5eqNkkdwgR0pmOBoCwVDBxnwjUI6Qo5cZWbEt6yxi6vwXj7bs6aWjHqFl4+LiAkc4MiSBbm9vMbQpyIiAOXd1dcWJeMnIS1ogHQ8d6yq6BsiaeDiLkzgPXq6ZLnn0gNou7bHPz89Ba0UeHx9xEtasoSkGiK1BXl9fx/v7e7y9vdHfZQU7bcsgCQbHbMvg8ZxzBidG5bHrqB0IKT4wZMEW+U+HfS4dK2+7TcMuJK52YsO67VVnq9IJj1LnTHiD8AbCLgwK4Gg71U4QA2Rf9RxtmTLoXVDX9lrRBWh33Fgd0kkDMD3QoU1aoPkKJycB+OGbwXcuG5eFkkRbpk3++s2AHb6BV1EeEDYCVGetmTqJEQlPB6K4WzuZ45b6C4GtHQgmcAgycJICX8fDDhxZLUseQYnnPxNgMiGbjH7a0UIBBAQ22QjhmRJjXnpRzHHWAKNUJUaJh6Pq+qFNsJBUx/OfyWMpCzOGbISzfNkQmWWkrHscZXmjS4H1ZNJeXsfzyw1Hy89DbEq8P07aJTElh3R1AAAAAElFTkSuQmCC);
+            background-repeat   : repeat;
+            opacity             : 0.3;
+        }
+        div[data-type="PVC.Logo.Button.Glare"]{
+            position            : absolute;
+            width               : 50px;
+            height              : 50px;
+            margin-top          : 3px;
+            margin-left         : 5px;
+            border-radius       : 25px;
+            background          : -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(255,255,255,0) 69%, rgba(255,255,255,0) 100%);
+            background          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(18%,rgba(255,255,255,1)), color-stop(69%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+            background          : -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 100%);
+            background          : -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 100%);
+            background          : -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 100%);
+            background          : linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 18%,rgba(255,255,255,0) 69%,rgba(255,255,255,0) 100%);
+            filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+        }
+        div[data-type="PVC.Logo.Button.Cover"]{
+            position            : absolute;
+            width               : 60px;
+            height              : 60px;
+            margin-top          : 20px;
+            margin-left         : 20px;
+            border-radius       : 30px;
+            background          : rgb(255,255,255);
+            -webkit-box-shadow  : 0px 0px 25px rgba(255,255,255,1);
+            box-shadow          : 0px 0px 25px rgba(255,255,255,1);
+            opacity             : 0.01;
+		    -webkit-transition	: opacity ease-out 400ms;
+		    -moz-transition		: opacity ease-out 400ms;
+		    -ms-transition		: opacity ease-out 400ms;
+		    -o-transition		: opacity ease-out 400ms;
+		    transition			: opacity ease-out 400ms;
+            cursor              : pointer;
+        }
+            div[data-type="PVC.Logo.Button.Cover"]:hover{
+                opacity : 0.4;
+            }
+
+    div[data-type="PVC.Label.Container"]{
+        position        : absolute;
+        top             : 100%;
+        left            : 200px;
+        margin-top      : -150px;
+        height          : 100px;
+    }
+        p[data-type="PVC.Label.Title"] {
+            font-family         : 'OCR A Std';
+            font-size           : 40px;
+            color               : rgba(0,0,0,0.8);
+            margin              : 25px 0px 0px -3px;
+            padding             : 0;
+            -webkit-text-shadow : 0px 2px 3px #666;
+            text-shadow         : 0px 2px 3px #666;
+            cursor              : default;
+        }
+        p[data-type="PVC.Label.SubTitle"]{
+            font-family :'OCR A Std';
+            font-size   :12px;
+            color       :rgb(50,50,50);
+            margin      :0;
+            padding     :0;
+            cursor      : default;
+        }
+    div[data-type="PVC.Logs.Container"]{
+        position            : absolute;
+        top                 : 10%;
+        left                : 20%;
+        width               : 60%;
+        height              : 60%;
+        border-radius       : 6px;
+        background          : rgba(0,0,0,0.4);
+        -webkit-box-shadow  : 3px 3px 15px rgba(0,0,0,0.4);
+        box-shadow          : 3px 3px 15px rgba(0,0,0,0.4);
+        overflow            : hidden;
+    }
+        div[data-type="PVC.Logs.Container"]:hover{
+            overflow : auto;
+        }
+        p[data-type="PVC.Logs.Message"]{
+            font-family:'Arial Narrow', 'Nimbus Sans L', sans-serif;
+            font-size   :12px;
+            margin      :6px 6px 6px 24px;
+            padding     :0;
+        }
+            span[data-type="PVC.Logs.Message.Type.OK"]{
+                color       :rgb(8, 143, 2);
+                font-weight :bold;
+            }
+            span[data-type="PVC.Logs.Message.Type.BAD"]{
+                color       :rgb(164, 0, 0);
+                font-weight :bold;
+            }
+            span[data-type="PVC.Logs.Message.Type.RESPONSE"]{
+                color       :rgb(3, 5, 117);
+                font-weight :bold;
+            }
+        .PVC_Logs_Message_Type_Normal{
+            color       :rgb(255,255,255);
+        }
+        .PVC_Logs_Message_Type_Critical{
+            color       :rgb(255,50,50);
+        }
+    div[data-type="PVC.Stages.Container"]{
+        position            : absolute;
+        top                 : 50%;
+        left                : 20%;
+        margin-top          :-25px;
+        width               : 60%;
+        height              : 50px;
+    }
+        p[data-type="PVC.Stages.Message"]{
+            font-family                         : 'Arial Narrow', 'Nimbus Sans L', sans-serif;
+            font-size                           : 22px;
+            margin                              : 6px;
+            padding                             : 0;
+            text-align                          : center;
+            -moz-animation-name                 : PVC_Stages_Message;
+            -o-animation-name                   : PVC_Stages_Message;
+            -webkit-animation-name              : PVC_Stages_Message;
+            animation-name                      : PVC_Stages_Message;
+            -moz-animation-duration             : 400ms;
+            -o-animation-duration               : 400ms;
+            -webkit-animation-duration          : 400ms;
+            animation-duration                  : 400ms;
+            -moz-animation-timing-function      : ease-in-out;
+            -o-animation-timing-function        : ease-in-out;
+            -webkit-animation-timing-function   : ease-in-out; 
+            animation-timing-function           : ease-in-out;
+        }
+        .PVC_Stages_Message_Type_Normal{
+            color                               :rgb(50,50,50);
+            -webkit-text-shadow                 : 0px 0px 6px rgba(255,255,255,0.7);
+            text-shadow                         : 0px 0px 6px rgba(255,255,255,0.7);
+        }
+        .PVC_Stages_Message_Type_Critical{
+            color                               :rgb(255,0,0);
+            -webkit-text-shadow                 : 0px 0px 6px rgba(0,0,0,0.7);
+            text-shadow                         : 0px 0px 6px rgba(0,0,0,0.7);
+        }
+@keyframes PVC_Logo_LightWayRing_Cover {
+    from {
+        -moz-transform      : rotate(0deg);
+        -ms-transform       : rotate(0deg);
+        -o-transform        : rotate(0deg);
+        -webkit-transform   : rotate(0deg);
+        transform           : rotate(0deg);
+    }
+	to {
+        -moz-transform      : rotate(360deg);
+        -ms-transform       : rotate(360deg);
+        -o-transform        : rotate(360deg);
+        -webkit-transform   : rotate(360deg);
+        transform           : rotate(360deg);
+	}
+}
+@-moz-keyframes PVC_Logo_LightWayRing_Cover {
+    from {
+        -moz-transform      : rotate(0deg);
+        transform           : rotate(0deg);
+    }
+	to {
+        -moz-transform      : rotate(360deg);
+        transform           : rotate(360deg);
+	}
+}
+@-webkit-keyframes PVC_Logo_LightWayRing_Cover {
+    from {
+        -webkit-transform   : rotate(0deg);
+        transform           : rotate(0deg);
+    }
+	to {
+        -webkit-transform   : rotate(360deg);
+        transform           : rotate(360deg);
+	}
+}
+
+@keyframes PVC_Stages_Message {
+    from {
+        -moz-transform      : translateY(-60px);
+        -ms-transform       : translateY(-60px);
+        -o-transform        : translateY(-60px);
+        -webkit-transform   : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -moz-transform      : translateY(0px);
+        -ms-transform       : translateY(0px);
+        -o-transform        : translateY(0px);
+        -webkit-transform   : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}
+@-moz-keyframes PVC_Stages_Message {
+    from {
+        -moz-transform      : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -moz-transform      : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}
+@-webkit-keyframes PVC_Stages_Message {
+    from {
+        -webkit-transform   : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -webkit-transform   : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}

@@ -1,0 +1,166 @@
+div[data-type-element="Purity.Controls.Tabs"] {
+    position : relative;
+}
+    div[data-type-element="Purity.Controls.Tabs.List"] {
+        position    : absolute;
+        overflow    : hidden;
+    }
+        div[data-type-element="Purity.Controls.Tabs.List"][data-type-tabs-layout="top"] {
+            top     : 0;
+            left    : 0;
+            width   : 100%;
+            /*height  : 3em;/*Set via JS*/
+        }
+        div[data-type-element="Purity.Controls.Tabs.List"][data-type-tabs-layout="bottom"] {
+            top         : 100%;
+            left        : 0;
+            width       : 100%;
+            /*margin-top  : -3em;/*Set via JS*/
+            /*height      : 3em;/*Set via JS*/
+        }
+        div[data-type-element="Purity.Controls.Tabs.List"][data-type-tabs-layout="left"] {
+            top     : 0;
+            left    : 0;
+            height  : 100%;
+            /*width   : 3em;/*Set via JS*/
+        }
+        div[data-type-element="Purity.Controls.Tabs.List"][data-type-tabs-layout="right"] {
+            top         : 0;
+            left        : 100%;
+            height      : 100%;
+            /*width       : 3em;/*Set via JS*/
+            margin-left : -3em;
+        }
+    div[data-type-element="Purity.Controls.Tabs.Content"] {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        height  : 100%;
+    }
+        div[data-type-element="Purity.Controls.Tabs.Content.Casing"] {
+            position: absolute;
+        }
+            div[data-type-element="Purity.Controls.Tabs.Content.Casing"][data-type-tabs-layout="top"] {
+		        /*top			:3em;/*Set via JS*/
+		        left		:0;
+		        bottom		:0;
+		        right		:0;
+		        width		:100%;
+            }
+            div[data-type-element="Purity.Controls.Tabs.Content.Casing"][data-type-tabs-layout="bottom"] {
+		        top			:0;
+		        left		:0;
+		        /*bottom		:3em;/*Set via JS*/
+		        right		:0;
+		        width		:100%;
+            }
+            div[data-type-element="Purity.Controls.Tabs.Content.Casing"][data-type-tabs-layout="left"] {
+		        top			:0;
+		        /*left		:3em;/*Set via JS*/
+		        bottom		:0;
+		        right		:0;
+		        height		:100%;
+            }
+            div[data-type-element="Purity.Controls.Tabs.Content.Casing"][data-type-tabs-layout="right"] {
+		        top			:0;
+		        left		:0;
+		        bottom		:0;
+		        /*right		:3em;/*Set via JS*/
+		        height		:100%;
+            }
+            div[data-type-element="Purity.Controls.Tabs.Content.Value"] {
+                position    : relative;
+                top         : 0;
+                left        : 0;
+                width       : 100%;
+                height      : 100%;
+            }
+
+div[data-type-element="Purity.Controls.Tabs.Button"] {
+    position                : absolute;
+    -moz-transition         : all 150ms ease-in-out;
+    -o-transition           : all 150ms ease-in-out;
+    -webkit-transition      : all 150ms ease-in-out;
+    transition              : all 150ms ease-in-out;
+}
+    div[data-type-element="Purity.Controls.Tabs.Button.Icon.Container"] {
+        /*position        :relative;*//*Set via JS*/
+        top             : 0;
+        left            : 0;
+        /*padding         :0.5em;*//*Set via JS*/
+    }
+        div[data-type-element="Purity.Controls.Tabs.Button.Icon"] {
+            position                : absolute;
+            /*width                   : 1em;*//*Set via JS*/
+            /*height                  : 1em;*//*Set via JS*/
+            left                    : 50%;
+            top                     : 50%;
+            /*margin-left             : -0.5em;*//*Set via JS*/
+            /*margin-top              : -0.5em;*//*Set via JS*/
+            -moz-background-size    : contain;
+            -o-background-size      : contain;
+            background-size         : contain;
+        }
+    div[data-type-element="Purity.Controls.Tabs.Button.Caption"] {
+        position: relative;
+        top     : 0;
+        left    : 0;
+    }
+        p[data-type-element="Purity.Controls.Tabs.Button.Caption"] {
+            -ms-word-wrap   : normal;
+            word-wrap       : normal;
+            white-space     : nowrap;
+            cursor          : default;
+        }
+div[data-type-element="Purity.Controls.Tabs.DeveloperContent"] {
+    position    : relative;
+    width       : 100%;
+    height      : 100%;
+}
+
+
+/*Default style*/
+.Purity_Controls_Tabs_Button_Select_Default{
+    background:rgba(0,0,0,0.2);
+    box-shadow:0 0 0.5em rgba(0,0,0,1) inset;
+}
+div[data-type-element="Purity.Controls.Tabs"][data-default-style="true"] {
+}
+    div[data-type-element="Purity.Controls.Tabs.List"][data-default-style="true"] {
+    }
+    div[data-type-element="Purity.Controls.Tabs.Content"][data-default-style="true"] {
+                background:rgba(0,0,0,0.2);
+    }
+        div[data-type-element="Purity.Controls.Tabs.Content.Casing"][data-default-style="true"] {
+        }
+            div[data-type-element="Purity.Controls.Tabs.Content.Value"][data-default-style="true"] {
+                background:rgba(0,0,0,0.2);
+                box-shadow:0 0 0.5em rgba(0,0,0,1) inset;
+            }
+div[data-type-element="Purity.Controls.Tabs.Button"][data-default-style="true"] {
+    /*border: thin solid rgba(255,255,255,0.5);*/
+}
+    div[data-type-element="Purity.Controls.Tabs.Button.Icon.Container"][data-default-style="true"] {
+    }
+        div[data-type-element="Purity.Controls.Tabs.Button.Icon"][data-default-style="true"] {
+        }
+    div[data-type-element="Purity.Controls.Tabs.Button.Caption"][data-default-style="true"] {
+    }
+        p[data-type-element="Purity.Controls.Tabs.Button.Caption"][data-default-style="true"] {
+            padding         : 0.7em;
+            margin          : 0;
+            font-family     :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size       : 0.8em;
+            color           : rgb(255,255,255);
+        }
+div[data-type-element="Purity.Controls.Tabs.DeveloperContent"][data-default-style="true"] {
+}
+
+/*
+div[data-type-element=""] {
+}
+
+
+*/
+

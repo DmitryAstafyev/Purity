@@ -1,0 +1,90 @@
+/*Глобальные свойства*/
+html {
+	width	:100%;/*Без этого не будет работать растяжка div'ов */
+	height	:100%;
+	margin	:0;
+}
+	body {
+		width						:100%;/*Без этого не будет работать растяжка div'ов */
+		height						:100%;
+		overflow                    :hidden;
+	}
+/*Контейнер*/
+#PurityLoaderProccessContainer{
+	position		: relative;
+	width			: 300px;
+	min-height		: 50px;
+	margin			: 0 auto;
+	margin-top		: -100px;
+	top 			: 50%;
+	overflow		: hidden;
+}
+	/*Область надписи*/
+	#PurityLoaderProccessLabel{
+		padding-top		: 12px;
+		padding-bottom	: 12px;
+		text-align		: center;
+		width			: auto;
+		margin			: 0;
+		font-family		: Arial, Helvetica, sans-serif;
+		font-size		: 16px;
+		color			: rgb(50, 50, 50);
+		min-height		: 20px;
+		/*max-height		: 20px;*/
+		text-shadow     : 1px 1px 2px rgba(0, 0, 0, 0.4);
+	}
+	/*Область анимации загрузки*/
+	#PurityLoaderProccessAnimationDIV{
+		position							: relative;
+		left								: -100%;
+		height								: 2px;
+		min-height							: 2px;
+		max-height							: 2px;
+		width								: auto;
+		margin								: 0;
+		background							: -moz-linear-gradient(left, rgba(204, 204, 204,0) 0%, rgba(204, 204, 204,1) 50%, rgba(204, 204, 204,0) 100%);
+		background							: -webkit-linear-gradient(left, rgba(204, 204, 204,0) 0%, rgba(204, 204, 204,1) 50%, rgba(204, 204, 204,0) 100%);
+		background							: -o-linear-gradient(left, rgba(204, 204, 204,0) 0%, rgba(204, 204, 204,1) 50%, rgba(204, 204, 204,0) 100%);
+		background							: -ms-linear-gradient(left, rgba(204, 204, 204,0) 0%, rgba(204, 204, 204,1) 50%, rgba(204, 204, 204,0) 100%);
+		background							: linear-gradient(left, rgba(204, 204, 204,0) 0%, rgba(204, 204, 204,1) 50%, rgba(204, 204, 204,0) 100%);
+		-moz-animation-name					: PurityLoaderProccessAnimation;
+		-o-animation-name					: PurityLoaderProccessAnimation;
+		-webkit-animation-name				: PurityLoaderProccessAnimation;
+		animation-name						: PurityLoaderProccessAnimation;
+		-moz-animation-iteration-count		: infinite;
+		-o-animation-iteration-count		: infinite;
+		-webkit-animation-iteration-count	: infinite;
+		animation-iteration-count			: infinite;
+		-moz-animation-duration				: 4000ms;
+		-o-animation-duration				: 4000ms;
+		-webkit-animation-duration			: 4000ms;
+		animation-duration					: 4000ms;
+	}
+	/*Описание анимации*/
+	@keyframes PurityLoaderProccessAnimation {
+		from {
+			left : -100%;
+		}
+		to {
+			left : 100%;
+		}
+	}
+
+	@-moz-keyframes PurityLoaderProccessAnimation {
+		from {
+			left : -100%;
+		}
+		to {
+			left : 100%;
+		}
+	}
+	
+	@-webkit-keyframes PurityLoaderProccessAnimation {
+		from {
+			left : -100%;
+		}
+		to {
+			left : 100%;
+		}
+	}
+	

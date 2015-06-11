@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<paths>
+		<privatePHP>\Kernel\PHP\private\</privatePHP>
+		<PurityJS>\Kernel\JS\</PurityJS>
+		<addDOCUMENT_ROOT>yes</addDOCUMENT_ROOT> <!-- no || yes -->
+	</paths>
+	<urls>
+		<PurityJS>/Kernel/JS/</PurityJS>
+		<protocol>http</protocol>
+	</urls>	
+	<cache>
+		<resources_versions>versions.cache</resources_versions>
+	</cache>
+</data>

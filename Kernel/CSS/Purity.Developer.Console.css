@@ -1,0 +1,406 @@
+/* Events */
+div[data-type-element="Purity.Developer.Console.Events"] {
+    position        : relative;
+    top             :0;
+    left            :0;
+    width           : 100%;
+    height          : 100%;
+}
+    div[data-type-element="Purity.Developer.Console.Events.Filter"] {
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        height          : 2em;
+    }
+        div[data-type-element="Purity.Developer.Console.Events.Filter.Icon"] {
+            position        : absolute;
+            top             : 0;
+            left            : 0;
+            width           : 2em;
+            height          : 2em;
+        }
+            div[data-type-element="Purity.Developer.Console.Events.Filter.Icon.Image"] {
+                position                : absolute;
+                width                   : 1em;
+                height                  : 1em;
+                top                     : 50%;
+                left                    : 50%;
+                margin-top              : -0.5em;
+                margin-left             : -0.5em;
+                -moz-background-size    : contain;
+                -o-background-size      : contain;
+                background-size         : contain;
+                background-image        : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADx0RVh0QUxUVGFnAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4g2GvoxAAAAB90RVh0Q29weXJpZ2h0AFJPWUFMVFkgRlJFRSBMSUNFTlNFIN7Zi2kAAABFaVRYdERlc2NyaXB0aW9uAAAAAABUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuILwR+BoAAAAjaVRYdENvcHlyaWdodAAAAAAAUk9ZQUxUWSBGUkVFIExJQ0VOU0UgJ10KSgAAApxJREFUeNq8V0tu4kAQNQks2CAvQPyEMCCxZm4AJyDcAJ8gmhPkCIQT2DcIOQEcgTUbzFd8FcSCP3iqLHtUeEjcjc2U9KTQ7vfqdVf/Iggu43K5FAAKoKvbAtvMbwXB6zifzxKgCeI6C7AvcjxJfjqdXgBfAJ0TyHmhWj7e5MfjEQU+bM0rgAr4BGhmG462DKgCRFv/SiAQaHCP/HA4SIAvgE5QA4g/cESzD+WgBn85drtdc7/f6wRVVi72pVzU4kq+3W4LQNIJancMoEY1UJN5DWw2G8Wsp1Fzn8+XCQaDK85BiLA7u2RNqE+sZCAWAYIJlTc5BnKQS3SKPAYkQvy8dwsjl+hIfhbSer3GqaNNmgsDV1w/I+/KgM0M79EtwPr5+5upBKFQSEOiBZw6FzMgUS2eNaCR2pVdGCgTHY3HQIsQq8vlUuRNjhzkEp0Wj4E6IWLytzsm4A25RKfOdRktFgs8PovElByJRFQW7nw+r8LiU0hTKxwOl5446ycDVtYIIJTZbFYDfFsO/IZ9sC8ZOWrIzNfxdDpFAbyGK+Y16/o6jkajDUcDk8kEiYqZ3EpUMsWVG8JOgXw5Fos1HB8k4/FYhJphze3vOdyOv+CbZa7ImLyFyePxuOb4IhqNRt8lt6INJkrJZHIFRrHPq2nEfkBpZuJ6IpFo3xL6x8BwOETBDzDgdNqhgZbb9+XVXTAYDAowsqb97L81A2Cw7cUD99n6o9/v48ibDAurAckrqVRq5YUBowS9Xq9qLiinUNPptOzl/xc+TdOYk0uS5Glyw0C322W53H9nMpl34QHhhzu5/cN2w8eDnM1mVeFBgXdBiZ7vFHhwPDK5YSCXy2FyuwmjDb49NPnVQdTpdKxtaBwy+Xy+LfyH+CPAAL8Jnl2Tjzy6AAAAAElFTkSuQmCC);
+            }
+        div[data-type-element="Purity.Developer.Console.Events.Filter.Input"] {
+            position        : absolute;
+            top             : 0;
+            left            : 2em;
+            bottom          : 0;
+            right           : 0.2em;
+            height          : 100%;
+        }
+            input[data-type-element="Purity.Developer.Console.Events.Filter.Input"] {
+                display         : block;
+                position        : absolute;
+                top             : 10%;
+                height          : 80%;
+                width           : 100%;
+                border          : thin solid rgb(150,150,150);
+                background      : rgb(0,0,0);
+                font-family     :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                font-size       : 0.8em;
+                padding         : 0;
+                margin          : 0;
+                cursor          :default;
+                color           : rgb(240,240,240);
+                border-radius   : 0.3em;
+                outline         : none;
+        }
+    div[data-type-element="Purity.Developer.Console.Events.Content"] {
+        position        : absolute;
+        top             : 2em;
+        left            : 0;
+        bottom          : 0;
+        right           : 0;
+        width           : 100%;
+    }
+
+div[data-type-element="Purity.Developer.Console.EventsRecord"] {
+    position        : relative;
+    top             :0;
+    left            :0;
+    width           : 100%;
+    height          : 1.5em;
+    overflow        :hidden;
+    border-bottom   : thin solid rgb(30,30,30);
+}
+    div[data-type-element="Purity.Developer.Console.EventsRecord.Pin.Container"] {
+        position: absolute;
+        width   : 1.5em;
+        height  : 100%;
+    }
+        div[data-type-element="Purity.Developer.Console.EventsRecord.Pin"] {
+            position                : absolute;
+            width                   : 1em;
+            height                  : 1em;
+            top                     : 50%;
+            left                    : 50%;
+            margin-top              : -0.5em;
+            margin-left             : -0.5em;
+            -moz-background-size    : contain;
+            -o-background-size      : contain;
+            background-size         : contain;
+            background-image        : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzMrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzUxRkFGNjU4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzUxRkFGNjU4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDNTFGQUY2NTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QzUxRkFGNjU4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzMrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+qK4H7AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANaSURBVHja1FhpTiJBFIbJ/NC4pBUhChha4ABwA7mB3ABPMHKCmTkBzAmaG+AN9AbDX0zQBllcWMoFRUCZ9ypFgg40XdVNN/2SSifQVfV9b3/tcpkso9Eo5XKqfHx8KEBgBM+YI8HDGrF1aNW938045P39XbHLdQwTGA6Hip1+b4jAYDBQ7A7ab6Ib+/2+Ag/bM46QBd7e3ih40L7LcQR0gpetIuDmebnX6+l1mwKsxMrKClkaAq+vr7w+T0msrq4S24P45eVFJGBj4GZnsFey1QLdbldxu93C2QZIUEusra0RywkgeJNSZQGIJNbX14llBJ6fn83O82iJP/gEIoWFEnh6erKrSKGFchsbG2lhAo+Pj8tQYXObm5vH3Fno4eFhKdoDxABYTrgq8Rj8gtsDlS2aZmFJpsQAIcQKzaclScqy+xD4X42WowDvxnVZoNPppCxoiU+3trYoeLhPwgKnBR7rhil1oN1u4yU4Hv5gJhfNLPHt7W0VzkPNn2mcRcHDu8QUAhNEUGsZQTf77fF4frVarbngoeJzgefuRgEEb6xgwMYxMQC4uZoHokQoiHmk2WzykEgC+HM94Hd2dohwFuKV+/t7PSTOkYAen/d6vcI9khCBu7u7ef7sYpkkMw+8z+cz1OC5RTfe3t6iBZRZrQADrhmwRsEb/axyrjEDHAJAeZGaN2wBlJubG96+g4Lf3d01bS4w9GGLs2+i4Pf29j6BbzQaKRYrKHH4X11GAhS83+//BL5er2MbMxlHeSRh+lCvRUDHmgq+VqtR8F/ejcHvmWUiMBU825uZseekWq0eWUJAj9sEAgEioBjl+vpatsICZJbm8StEMBgkGnvj7L3/9rNBJ28Fgdws8Pv7+5qah/9VWEgiO0MJsUqlMjce3Eb9pFwuT/ZF1G1CoRDhPOOIVfVpI2YSzjtdGAEGgA7gcFHWwBkyaD0/pf2gA5Esy+rCCJg69asqus3JF1ctHBwcxK3OQkICmk4D4ORkgkCrXF1dKY6wwFguLy9llokmXeo4HA7nHEFgLKVSadKlMB4SkUik4BgCjMQR65mkcaaLRqNkKWNgmoDGT9mEh+Bj7AuJyzEEUEDjtEBi8cS6c3FxkXKMC30VBv4nWsWRBFCKxSJmKfmfAAMA9FpI8CtRvUUAAAAASUVORK5CYII=);
+            opacity                 : 0.3;
+            -moz-transition         : opacity 300ms ease-in-out;
+            -o-transition           : opacity 300ms ease-in-out;
+            -webkit-transition      : opacity 300ms ease-in-out;
+            transition              : opacity 300ms ease-in-out;
+        }
+    div[data-type-element="Purity.Developer.Console.EventsRecord.Icon.Container"] {
+        position: absolute;
+        width   : 1.5em;
+        height  : 100%;
+        top     : 0;
+        left    : 1.5em;
+    }
+        div[data-type-element="Purity.Developer.Console.EventsRecord.Icon.SubContainer"] {
+            position        : absolute;
+            width           : 1em;
+            height          : 1em;
+            top             : 50%;
+            left            : 50%;
+            margin-top      : -0.5em;
+            margin-left     : -0.5em;
+            border-top      : thin solid rgb(50, 50, 50);
+            border-left     : thin solid rgb(50, 50, 50);
+            border-right    : thin solid rgb(100, 100, 100);
+            border-bottom   : thin solid rgb(100, 100, 100);
+            border-radius   : 0.5em;
+            background      : rgb(75,75,75);
+            box-shadow      : 0 0 2px rgba(0,0,0,1) inset;
+        }
+            div[data-type-element="Purity.Developer.Console.EventsRecord.Icon"] {
+                position        : absolute;
+                content         : "";
+                width           : 0.7em;
+                height          : 0.7em;
+                top             : 0.15em;
+                left            : 0.15em;
+                border-radius   : 0.5em;
+                background      : rgb(0,255,0);
+                background      : -moz-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%, rgba(0,100,0,1) 100%);
+                background      : -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,255,0,1)), color-stop(100%,rgba(0,100,0,1)));
+                background      : -webkit-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : -o-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : -ms-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : radial-gradient(ellipse at center,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#640000',GradientType=1 );
+                opacity         : 0.1;
+                -moz-transition         : opacity 300ms ease-in-out;
+                -o-transition           : opacity 300ms ease-in-out;
+                -webkit-transition      : opacity 300ms ease-in-out;
+                transition              : opacity 300ms ease-in-out;
+            }
+                div[data-type-element="Purity.Developer.Console.EventsRecord.Icon"]:after {
+                    position        : absolute;
+                    content         : "";
+                    width           : 0.5em;
+                    height          : 0.5em;
+                    top             : 0.15em;
+                    left            : 0.25em;
+                    border-radius   : 0.5em;
+                    background      : -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+                    background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+                    background      : -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+                    opacity         :0.5;
+                }
+    div[data-type-element="Purity.Developer.Console.EventsRecord.Time"] {
+        position        : absolute;
+        width           : 7em;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 6em;
+        text-align      : center;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.EventsRecord.Time"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            text-align  : center;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+    div[data-type-element="Purity.Developer.Console.EventsRecord.Count"] {
+        position        : absolute;
+        width           : 3em;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 3em;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.EventsRecord.Count"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            text-align  : center;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+    div[data-type-element="Purity.Developer.Console.EventsRecord.Name"] {
+        position        : absolute;
+        width           : 100%;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 13em;
+        top             : 0;
+        right           : 0em;
+        bottom          : 0;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.EventsRecord.Name"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+
+/* Console: logs*/
+div[data-type-element="Purity.Developer.Console.LogsRecord"] {
+    position        : relative;
+    width           : 100%;
+    overflow        : hidden;
+}
+    div[data-type-element="Purity.Developer.Console.LogsRecord.Message"] {
+        position        : relative;
+        width           : 100%;
+        margin-bottom   : -1.5em;
+    }
+        div[data-type-element="Purity.Developer.Console.LogsRecord.Time"] {
+            position    : relative;
+            width       : 6em;
+            height      : 1.5em;
+            top         : 0;
+            left        : 0;
+        }
+            p[data-type-element="Purity.Developer.Console.LogsRecord.Time"] {
+                font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                font-size   : 0.8em;
+                padding     : 0.5em;
+                margin      : 0;
+                cursor      :default;
+                color       : rgb(200,200,200);
+            }
+        div[data-type-element="Purity.Developer.Console.LogsRecord.Name"] {
+            position    :relative;
+            left        :6em;
+            top         :-1.5em;
+            bottom      :0;
+            right       :0;
+        }
+            p[data-type-element="Purity.Developer.Console.LogsRecord.Name"] {
+                font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                font-size   : 0.8em;
+                padding     : 0.5em;
+                margin      : 0;
+                cursor      :default;
+                color       : rgb(240,240,240);
+            }
+    div[data-type-element="Purity.Developer.Console.LogsRecord.Details"] {
+        position        : relative;
+        width           : 100%;
+    }
+        p[data-type-element="Purity.Developer.Console.LogsRecord.Details"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.7em;
+            padding     : 0em 0.5em 0.5em 2em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(200,200,200);
+        }
+
+
+/* LifeView */
+
+div[data-type-element="Purity.Developer.Console.LifeViewRecord"] {
+    position        : relative;
+    top             :0;
+    left            :0;
+    width           : 100%;
+    height          : 1.5em;
+    overflow        :hidden;
+    border-bottom   : thin solid rgb(30,30,30);
+}
+    div[data-type-element="Purity.Developer.Console.LifeViewRecord.Icon.Container"] {
+        position: absolute;
+        width   : 1.5em;
+        height  : 100%;
+        top     : 0;
+        left    : 0;
+    }
+        div[data-type-element="Purity.Developer.Console.LifeViewRecord.Icon.SubContainer"] {
+            position        : absolute;
+            width           : 1em;
+            height          : 1em;
+            top             : 50%;
+            left            : 50%;
+            margin-top      : -0.5em;
+            margin-left     : -0.5em;
+            border-top      : thin solid rgb(50, 50, 50);
+            border-left     : thin solid rgb(50, 50, 50);
+            border-right    : thin solid rgb(100, 100, 100);
+            border-bottom   : thin solid rgb(100, 100, 100);
+            border-radius   : 0.5em;
+            background      : rgb(75,75,75);
+            box-shadow      : 0 0 2px rgba(0,0,0,1) inset;
+        }
+            div[data-type-element="Purity.Developer.Console.LifeViewRecord.Icon"] {
+                position        : absolute;
+                content         : "";
+                width           : 0.7em;
+                height          : 0.7em;
+                top             : 0.15em;
+                left            : 0.15em;
+                border-radius   : 0.5em;
+                background      : rgb(0,255,0);
+                background      : -moz-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%, rgba(0,100,0,1) 100%);
+                background      : -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,255,0,1)), color-stop(100%,rgba(0,100,0,1)));
+                background      : -webkit-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : -o-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : -ms-radial-gradient(center, ellipse cover,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                background      : radial-gradient(ellipse at center,  rgba(0,255,0,1) 0%,rgba(0,100,0,1) 100%);
+                filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#640000',GradientType=1 );
+                opacity         : 0.1;
+                -moz-transition         : opacity 300ms ease-in-out;
+                -o-transition           : opacity 300ms ease-in-out;
+                -webkit-transition      : opacity 300ms ease-in-out;
+                transition              : opacity 300ms ease-in-out;
+            }
+                div[data-type-element="Purity.Developer.Console.LifeViewRecord.Icon"]:after {
+                    position        : absolute;
+                    content         : "";
+                    width           : 0.5em;
+                    height          : 0.5em;
+                    top             : 0.15em;
+                    left            : 0.25em;
+                    border-radius   : 0.5em;
+                    background      : -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+                    background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+                    background      : -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    background      : linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                    filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+                    opacity         :0.5;
+                }
+    div[data-type-element="Purity.Developer.Console.LifeViewRecord.Time"] {
+        position        : absolute;
+        width           : 7em;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 11.5em;
+        text-align      : center;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.LifeViewRecord.Time"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            text-align  : center;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+    div[data-type-element="Purity.Developer.Console.LifeViewRecord.Value"] {
+        position        : absolute;
+        width           : 10em;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 1.5em;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.LifeViewRecord.Value"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            text-align  : center;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+    div[data-type-element="Purity.Developer.Console.LifeViewRecord.Name"] {
+        position        : absolute;
+        width           : 100%;
+        height          : 100%;
+        border-left     : thin solid rgb(30,30,30);
+        left            : 18.5em;
+        top             : 0;
+        right           : 0em;
+        bottom          : 0;
+        overflow        : hidden;
+    }
+        p[data-type-element="Purity.Developer.Console.LifeViewRecord.Name"] {
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   : 0.8em;
+            padding     : 0.5em;
+            margin      : 0;
+            cursor      :default;
+            color       : rgb(240,240,240);
+        }
+
+/*
+div[data-type-element=""] {
+}
+
+*/

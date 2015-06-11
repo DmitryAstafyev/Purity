@@ -1,0 +1,508 @@
+html {
+    width : 100%;
+    height: 100%;
+}
+body {
+    width               : 100%;
+    height              : 100%;
+    max-width           : 1px;
+    max-height          : 1px;
+    overflow            : hidden;
+}
+    div[data-type="PVC.Background.Cover"] {
+        position            : absolute;
+        top                 : 0px;
+        left                : 0px;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAIAAAER4zjTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUKM9jkJKSYsACcAijSCHU4FFNpKF4zSfSePobO1TMJMMuejpj6DsSALgzCSX+jMDUAAAAAElFTkSuQmCC);
+        background-repeat   : repeat;
+    }
+    div[data-type="PVC.Logo.Container"]{
+        position        : absolute;
+        top             : 100%;
+        left            : 100%;
+        margin-left     :-20em;
+        margin-top      : -8em;
+        width           : 20em;
+        height          : 4em;
+        background      : rgb(50,50,50);
+        background      : -moz-linear-gradient(top,  rgba(50,50,50,1) 0%, rgba(20,20,20,1) 100%);
+        background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,1)), color-stop(100%,rgba(20,20,20,1)));
+        background      : -webkit-linear-gradient(top,  rgba(50,50,50,1) 0%,rgba(20,20,20,1) 100%);
+        background      : -o-linear-gradient(top,  rgba(50,50,50,1) 0%,rgba(20,20,20,1) 100%);
+        background      : -ms-linear-gradient(top,  rgba(50,50,50,1) 0%,rgba(20,20,20,1) 100%);
+        background      : linear-gradient(to bottom,  rgba(50,50,50,1) 0%,rgba(20,20,20,1) 100%);
+        filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#141414',GradientType=0 );
+        overflow        : hidden;
+        opacity         : 0.9;
+        /*
+        -webkit-box-shadow  : 0px 0px 2em rgba(255,255,255,1);
+        box-shadow          : 0px 0px 2em rgba(255,255,255,1);
+        */
+    }
+        div[data-type="PVC.Logo.Container"]:after{
+            content             : "";
+            position        : absolute;
+            top             : 0.1em;
+            left            : 0.1em;
+            width           : 19.8em;
+            height          : 3.8em;
+            background      : rgb(20,20,20);
+            background      : -moz-linear-gradient(top,  rgba(20,20,20,1) 0%, rgba(50,50,50,1) 100%);
+            background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(20,20,20,1)), color-stop(100%,rgba(50,50,50,1)));
+            background      : -webkit-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(50,50,50,1) 100%);
+            background      : -o-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(50,50,50,1) 100%);
+            background      : -ms-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(50,50,50,1) 100%);
+            background      : linear-gradient(to bottom,  rgba(20,20,20,1) 0%,rgba(50,50,50,1) 100%);
+            filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#323232',GradientType=0 );
+            z-index         : 1;
+        }
+
+    div[data-type="PVC.Logo.LightWayRing"]{
+        position            : absolute;
+        width               : 100%;
+        margin-top          : 3.8em;
+        height              : 0.2em;
+        background          : rgb(0,150,0);
+        z-index             : 2;
+    }
+    div[data-type="PVC.Logo.LightWayRing.Cover"] {
+        position                            : absolute;
+        width                               : 200%;
+        height                              : 0.2em;
+        margin-top                          : 3.8em;
+        background                          : -moz-linear-gradient(left,  rgba(50,50,50,1) 0%, rgba(50,50,50,1) 42%, rgba(50,50,50,0) 50%, rgba(50,50,50,1) 58%, rgba(50,50,50,1) 100%);
+        background                          : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(50,50,50,1)), color-stop(42%,rgba(50,50,50,1)), color-stop(50%,rgba(50,50,50,0)), color-stop(58%,rgba(50,50,50,1)), color-stop(100%,rgba(50,50,50,1)));
+        background                          : -webkit-linear-gradient(left,  rgba(50,50,50,1) 0%,rgba(50,50,50,1) 42%,rgba(50,50,50,0) 50%,rgba(50,50,50,1) 58%,rgba(50,50,50,1) 100%);
+        background                          : -o-linear-gradient(left,  rgba(50,50,50,1) 0%,rgba(50,50,50,1) 42%,rgba(50,50,50,0) 50%,rgba(50,50,50,1) 58%,rgba(50,50,50,1) 100%);
+        background                          : -ms-linear-gradient(left,  rgba(50,50,50,1) 0%,rgba(50,50,50,1) 42%,rgba(50,50,50,0) 50%,rgba(50,50,50,1) 58%,rgba(50,50,50,1) 100%);
+        background                          : linear-gradient(to right,  rgba(50,50,50,1) 0%,rgba(50,50,50,1) 42%,rgba(50,50,50,0) 50%,rgba(50,50,50,1) 58%,rgba(50,50,50,1) 100%);
+        filter                              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#323232',GradientType=1 );
+        -moz-animation-name                 : PVC_Logo_LightWayRing_Cover;
+        -o-animation-name                   : PVC_Logo_LightWayRing_Cover;
+        -webkit-animation-name              : PVC_Logo_LightWayRing_Cover;
+        animation-name                      : PVC_Logo_LightWayRing_Cover;
+        -moz-animation-iteration-count      : infinite;
+        -o-animation-iteration-count        : infinite;
+        -webkit-animation-iteration-count   : infinite;
+        animation-iteration-count           : infinite;
+        -moz-animation-duration             : 10000ms;
+        -o-animation-duration               : 10000ms;
+        -webkit-animation-duration          : 10000ms;
+        animation-duration                  : 10000ms;
+        -moz-animation-timing-function      : linear;
+        -o-animation-timing-function        : linear;
+        -webkit-animation-timing-function   : linear;
+        animation-timing-function           : linear;
+        z-index                             : 3;
+    }
+    div[data-type="PVC.Logo.Button"]{
+        position            : absolute;
+        width               : 3em;
+        height              : 3em;
+        margin-top          : 0.5em;
+        margin-left         : 0.5em;
+        border-radius       : 0.3em;
+        background          : rgb(150,150,150);
+        background          : -moz-linear-gradient(top,  rgba(150,150,150,1) 0%, rgba(65,65,65,1) 100%);
+        background          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(150,150,150,1)), color-stop(100%,rgba(65,65,65,1)));
+        background          : -webkit-linear-gradient(top,  rgba(150,150,150,1) 0%,rgba(65,65,65,1) 100%);
+        background          : -o-linear-gradient(top,  rgba(150,150,150,1) 0%,rgba(65,65,65,1) 100%);
+        background          : -ms-linear-gradient(top,  rgba(150,150,150,1) 0%,rgba(65,65,65,1) 100%);
+        background          : linear-gradient(to bottom,  rgba(150,150,150,1) 0%,rgba(65,65,65,1) 100%);
+        filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#414141',GradientType=0 );
+        z-index             : 2;
+    }
+        div[data-type="PVC.Logo.Button"]:after{
+            content             : "";
+            position            : absolute;
+            width               : 2.8em;
+            height              : 2.8em;
+            margin-top          : 0.1em;
+            margin-left         : 0.1em;
+            border-radius       : 0.3em;
+            background-image    : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAMAAADto6y6AAAAD1BMVEUgICAAAQAoKCg1NTU/Pz+suxeKAAAAOklEQVR42u2QwQkAMAgDo3b/mftSlKO4QO+VINGgZPJkarMyXb8TcaJM1/IJBtiYFh3WBDpsx8l/CbgSVgPZd9YSYQAAAABJRU5ErkJggg==);
+            background-repeat   : repeat;
+            opacity             : 0.2;
+        }
+        div[data-type="PVC.Logo.Button"]:before{
+            content             : "";
+            position            : absolute;
+            width               : 2.8em;
+            height              : 2.8em;
+            margin-top          : 0.1em;
+            margin-left         : 0.1em;
+            border-radius       : 0.3em;
+            background          : rgb(65,65,65);
+            background          : -moz-linear-gradient(top,  rgba(65,65,65,1) 0%, rgba(150,150,150,1) 100%);
+            background          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,65,65,1)), color-stop(100%,rgba(150,150,150,1)));
+            background          : -webkit-linear-gradient(top,  rgba(65,65,65,1) 0%,rgba(150,150,150,1) 100%);
+            background          : -o-linear-gradient(top,  rgba(65,65,65,1) 0%,rgba(150,150,150,1) 100%);
+            background          : -ms-linear-gradient(top,  rgba(65,65,65,1) 0%,rgba(150,150,150,1) 100%);
+            background          : linear-gradient(to bottom,  rgba(65,65,65,1) 0%,rgba(150,150,150,1) 100%);
+            filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#414141', endColorstr='#969696',GradientType=0 );
+            opacity             : 1;
+        }
+        div[data-type="PVC.Logo.Button.Cover"]{
+            position                            : absolute;
+            width                               : 3em;
+            height                              : 3em;
+            margin-top                          : 0.5em;
+            margin-left                         : 0.5em;
+            border-radius                       : 0.3em;
+            background                          : rgb(255,255,255);
+            -webkit-box-shadow                  : 0px 0px 25px rgba(255,255,255,1);
+            box-shadow                          : 0px 0px 25px rgba(255,255,255,1);
+            cursor                              : pointer;
+            -moz-animation-name                 : PVC_Logo_Button_Cover;
+            -o-animation-name                   : PVC_Logo_Button_Cover;
+            -webkit-animation-name              : PVC_Logo_Button_Cover;
+            animation-name                      : PVC_Logo_Button_Cover;
+            -moz-animation-iteration-count      : infinite;
+            -o-animation-iteration-count        : infinite;
+            -webkit-animation-iteration-count   : infinite;
+            animation-iteration-count           : infinite;
+            -moz-animation-duration             : 2000ms;
+            -o-animation-duration               : 2000ms;
+            -webkit-animation-duration          : 2000ms;
+            animation-duration                  : 2000ms;
+            -moz-animation-timing-function      : linear;
+            -o-animation-timing-function        : linear;
+            -webkit-animation-timing-function   : linear;
+            animation-timing-function           : linear;
+            z-index                             : 3;
+            display                             : none;
+        }
+
+    div[data-type="PVC.Label.Container"]{
+        position        : absolute;
+        top             : 100%;
+        left            : 100%;
+        margin-left     : -15em;
+        margin-top      : -7.7em;
+        z-index         : 2;
+    }
+        p[data-type="PVC.Label.Title"] {
+            font-family:'Arial Narrow', 'Nimbus Sans L', sans-serif;
+            font-size           : 2em;
+            color               : rgb(230,230,230);
+            margin              : 0;
+            padding             : 0;
+            cursor              : default;
+        }
+        p[data-type="PVC.Label.SubTitle"]{
+            font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+            font-size   :0.7em;
+            color       :rgb(200,200,200);
+            margin-top  : -0.3em;
+            margin-left :0em;
+            padding     :0;
+            cursor      : default;
+        }
+    div[data-type="PVC.Logs.Container"]{
+        position            : absolute;
+        top                 : 0px;
+        left                : 0px;
+        width               : 100%;
+        height              : 100%;
+        background          : rgba(0,0,0,0.4);
+        overflow            : auto;
+        /*overflow            : hidden;*/
+    }
+        div[data-type="PVC.Logs.Container.Records"]{
+            position            : absolute;
+            top                 : 0px;
+            left                : 0px;
+            width               : 100%;
+            height              : 100%;
+            overflow            : auto;
+            scrollbar-face-color:rgba(255,255,255,0.7);
+            scrollbar-base-color  : rgb(0,0,0);
+            scrollbar-base-color  : rgb(0,0,0);
+            scrollbar-3dlight-color: rgb(0,0,0);
+            scrollbar-highlight-color:rgb(0,0,0);
+            scrollbar-track-color: rgb(0,0,0);
+            scrollbar-arrow-color: rgb(0,0,0);
+            scrollbar-shadow-color: rgb(0,0,0);
+            scrollbar-dark-shadow-color: rgb(0,0,0);
+            /*overflow            : hidden;*/
+        }
+            p[data-type="PVC.Logs.Message"]{
+                font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                font-size   :0.8em;
+                margin      :6px 6px 6px 24px;
+                padding     :0;
+            }
+                span[data-type="PVC.Logs.Message.Type.OK"]{
+                    color       :rgb(8, 143, 2);
+                    font-weight :bold;
+                }
+                span[data-type="PVC.Logs.Message.Type.BAD"]{
+                    color       :rgb(164, 0, 0);
+                    font-weight :bold;
+                }
+                span[data-type="PVC.Logs.Message.Type.RESPONSE"]{
+                    color       :rgb(4, 150, 255);
+                    font-weight :bold;
+                }
+                span[data-type="PVC.Logs.Message.Type.CRITICAL"]{
+                    color       :rgb(255, 234, 0);
+                    font-weight :bold;
+                }
+            .PVC_Logs_Message_Type_Normal{
+                color       :rgb(255,255,255);
+            }
+            .PVC_Logs_Message_Type_Critical{
+                color       :rgb(255,50,50);
+            }
+            a[data-type="PVC.Link.Style"]{
+                text-decoration :none;
+                color           :rgb(8, 143, 2);
+            }
+                a[data-type="PVC.Link.Style"]:hover{
+                    text-decoration:underline;
+                }
+            p[data-type="PVC.Logs.PerformingMessage"]{
+                font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                font-size   :0.8em;
+                margin      :6px 6px 6px 24px;
+                padding     :0;
+                color       : rgb(0,163,8);
+            }
+            div[data-type="PVC.Logs.PerformingMessage"]{
+                display         : inline-block;
+                max-width       : 3em;
+                margin-left     : 0.5em;
+                margin-right    : 0.5em;
+                overflow        : hidden;
+                color           : rgb(0,163,8);
+            }
+                div[data-type="PVC.Logs.PerformingMessage.Progress"]{
+                    position        : relative;
+                    width           : 4em;
+                    height          : 0.8em;
+                    overflow        : hidden;
+                    border-radius   : 0.2em;
+                    background      : rgb(0,0,0);
+                    background      : -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,163,8,1) 50%, rgba(0,0,0,1) 100%);
+                    background      : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(0,163,8,1)), color-stop(100%,rgba(0,0,0,1)));
+                    background      : -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,163,8,1) 50%,rgba(0,0,0,1) 100%);
+                    background      : -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,163,8,1) 50%,rgba(0,0,0,1) 100%);
+                    background      : -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,163,8,1) 50%,rgba(0,0,0,1) 100%);
+                    background      : linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,163,8,1) 50%,rgba(0,0,0,1) 100%);
+                    filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+                    -moz-animation-name                 : PVC_PerformingMessage_Progress;
+                    -o-animation-name                   : PVC_PerformingMessage_Progress;
+                    -webkit-animation-name              : PVC_PerformingMessage_Progress;
+                    animation-name                      : PVC_PerformingMessage_Progress;
+                    -moz-animation-iteration-count      : infinite;
+                    -o-animation-iteration-count        : infinite;
+                    -webkit-animation-iteration-count   : infinite;
+                    animation-iteration-count           : infinite;
+                    -moz-animation-duration             : 2000ms;
+                    -o-animation-duration               : 2000ms;
+                    -webkit-animation-duration          : 2000ms;
+                    animation-duration                  : 2000ms;
+                    -moz-animation-timing-function      : linear;
+                    -o-animation-timing-function        : linear;
+                    -webkit-animation-timing-function   : linear;
+                    animation-timing-function           : linear;
+                }
+        div[data-type="PVC.Logs.Records.Top"]{
+            position:relative;
+            width   :100%;
+        }
+        div[data-type="PVC.Logs.Records.Bottom"]{
+            position:relative;
+            width   :100%;
+        }
+    div[data-type="PVC.Stages.Container"]{
+        position            : absolute;
+        top                 : 50%;
+        left                : 20%;
+        margin-top          :-25px;
+        width               : 60%;
+        height              : 50px;
+    }
+        p[data-type="PVC.Stages.Message"]{
+            font-family                         : 'Arial Narrow', 'Nimbus Sans L', sans-serif;
+            font-size                           : 22px;
+            margin                              : 6px;
+            padding                             : 0;
+            text-align                          : center;
+            -moz-animation-name                 : PVC_Stages_Message;
+            -o-animation-name                   : PVC_Stages_Message;
+            -webkit-animation-name              : PVC_Stages_Message;
+            animation-name                      : PVC_Stages_Message;
+            -moz-animation-duration             : 400ms;
+            -o-animation-duration               : 400ms;
+            -webkit-animation-duration          : 400ms;
+            animation-duration                  : 400ms;
+            -moz-animation-timing-function      : ease-in-out;
+            -o-animation-timing-function        : ease-in-out;
+            -webkit-animation-timing-function   : ease-in-out; 
+            animation-timing-function           : ease-in-out;
+        }
+        .PVC_Stages_Message_Type_Normal{
+            color                               :rgb(50,50,50);
+            -webkit-text-shadow                 : 0px 0px 6px rgba(255,255,255,0.7);
+            text-shadow                         : 0px 0px 6px rgba(255,255,255,0.7);
+        }
+        .PVC_Stages_Message_Type_Critical{
+            color                               :rgb(255,0,0);
+            -webkit-text-shadow                 : 0px 0px 6px rgba(0,0,0,0.7);
+            text-shadow                         : 0px 0px 6px rgba(0,0,0,0.7);
+        }
+@keyframes PVC_Logo_LightWayRing_Cover {
+    0% {
+        left:-100%;
+    }
+	50% {
+        left:0%;
+	}
+	100% {
+        left:-100%;
+	}
+}
+@-moz-keyframes PVC_Logo_LightWayRing_Cover {
+    0% {
+        left:-100%;
+    }
+	50% {
+        left:0%;
+	}
+	100% {
+        left:-100%;
+	}
+}
+@-webkit-keyframes PVC_Logo_LightWayRing_Cover {
+    0% {
+        left:-100%;
+    }
+	50% {
+        left:0%;
+	}
+	100% {
+        left:-100%;
+	}
+}
+@keyframes PVC_PerformingMessage_Progress {
+    from {
+        left:-200%;
+    }
+	to {
+        left:100%;
+	}
+}
+@-moz-keyframes PVC_PerformingMessage_Progress {
+    from {
+        left:-200%;
+    }
+	to {
+        left:100%;
+	}
+}
+@-webkit-keyframes PVC_PerformingMessage_Progress {
+    from {
+        left:-200%;
+    }
+	to {
+        left:100%;
+	}
+}
+
+@keyframes PVC_Logo_Button_Cover {
+    0% {
+        opacity:0;
+    }
+	50% {
+        opacity:0.7;
+	}
+	100% {
+        opacity:0;
+	}
+}
+@-moz-keyframes PVC_Logo_Button_Cover {
+    0% {
+        opacity:0;
+    }
+	50% {
+        opacity:0.7;
+	}
+	100% {
+        opacity:0;
+	}
+}
+@-webkit-keyframes PVC_Logo_Button_Cover {
+    0% {
+        opacity:0;
+    }
+	50% {
+        opacity:0.7;
+	}
+	100% {
+        opacity:0;
+	}
+}
+
+@keyframes PVC_Stages_Message {
+    from {
+        -moz-transform      : translateY(-60px);
+        -ms-transform       : translateY(-60px);
+        -o-transform        : translateY(-60px);
+        -webkit-transform   : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -moz-transform      : translateY(0px);
+        -ms-transform       : translateY(0px);
+        -o-transform        : translateY(0px);
+        -webkit-transform   : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}
+@-moz-keyframes PVC_Stages_Message {
+    from {
+        -moz-transform      : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -moz-transform      : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}
+@-webkit-keyframes PVC_Stages_Message {
+    from {
+        -webkit-transform   : translateY(-60px);
+        transform           : translateY(-60px);
+        opacity             : 0;
+    }
+	to {
+        -webkit-transform   : translateY(0px);
+        transform           : translateY(0px);
+        opacity             : 1;
+	}
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0.5em rgba(0,0,0,0.3); 
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background: rgba(255,255,255,0.7); 
+    -webkit-box-shadow: inset 0 0 0.5em rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,255,255,0.7); 
+}
+
